@@ -46,30 +46,31 @@ Developed by: Abdul hameed.H
 RegisterNumber: 212222050001
 
 ```
-module expression(a,b,c,d,f1);
-input a,b,c,d;
-output f1;
+module exp2(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
 wire x1,x2,x3,x4,x5;
-assign x1=(~a)&(~b)&(~c)&(~d);
-assign x2=(a)&(~c)&(~d);
-assign x3=(~b)&(c)&(~d);
-assign x4=(~a)&(b)&(c)&(d);
-assign x5=(b)&(~c)&(d);
-assign f1=x1|x2|x3|x4|x5;
+assign x1=(~A & ~B & ~C & ~D);
+assign x2=(A & ~C & ~D);
+assign x3=(~B & C& ~D);
+assign x4=(~A & B & C & D);
+assign x5=(B & ~C & D);
+assign F1=x1|x2|x3|x4|x5;
 endmodule
 ```
-## RTL diagram:
-
-![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/61d0297e-24a3-4940-9286-46b443b60548)
 
 ## Truth Table:
 
-![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/ab0d48a1-55ff-4381-9273-4ef7187efe87)
+![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/eb270967-eb7e-4457-8476-c16fe111332a)
+
+## RTL realization:
+
+![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/82988ecb-3975-4501-a21e-398e3beb5f94)
 
 
-## Output waveform:
+## Output :
 
-![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/b8fa94b0-dab3-4ad5-ac97-fda39da9b506)
+![image](https://github.com/lovelydevil36/Experiment--02-Implementation-of-combinational-logic-/assets/123564624/471f86c8-7b03-42f8-8854-a8c7207289b7)
 
 
 ## Result:
